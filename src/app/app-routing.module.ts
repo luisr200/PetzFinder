@@ -8,7 +8,7 @@ import { TagComponent } from './tag/tag.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'pet/:id', component: PetComponent },
-  { path: 'tag/:id', component: TagComponent },
+  { path: 'tags/:id', component: TagComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
