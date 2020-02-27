@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { PetComponent } from './pet/pet.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TagComponent } from './tag/tag.component';
-import { OAuthModule } from 'angular-oauth2-oidc';
+import { CallbackComponent } from './callback/callback.component';
 
 
 @NgModule({
@@ -16,15 +16,15 @@ import { OAuthModule } from 'angular-oauth2-oidc';
     AppComponent,
     HomeComponent,
     PetComponent,
-    TagComponent
+    TagComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
     HttpClientModule,
-    MaterialModule,
-    OAuthModule.forRoot()
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

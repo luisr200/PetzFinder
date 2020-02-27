@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Tag } from '../models/tag';
 import { Observable, of } from 'rxjs';
+import { environment } from '../../environments/environment';
 
-const url = 'https://3aq8h6y40a.execute-api.us-west-2.amazonaws.com/stage';
+const url = environment.apiEnpoint;
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ export class TagService {
 
   constructor(private http: HttpClient) { }
 
-  getTag(id: number): Observable<Tag>{
+  getTag(id: number): Observable<Tag> {
     return this.http.get<Tag>(url + '/tags/' + id);
   }
 }

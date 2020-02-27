@@ -4,7 +4,6 @@ import { Location } from '@angular/common';
 import { TagService } from '../services/tag.service';
 import { Tag } from '../models/tag';
 
-
 @Component({
   selector: 'app-tag',
   templateUrl: './tag.component.html',

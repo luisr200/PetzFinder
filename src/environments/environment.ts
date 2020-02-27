@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiEnpoint: 'https://3aq8h6y40a.execute-api.us-west-2.amazonaws.com/stage',
+  cognitoEndpoint: 'https://petzfinder.auth.us-west-2.amazoncognito.com/oauth2/',
+  cognitoClientId: '1e9bjqcg835vr3aui4cvtmtnlu',
+  cognitoredirectUrl: 'https://petzfinder.net',
+  cognitoGrantType: 'authorization_code'
 };
 
 /*
