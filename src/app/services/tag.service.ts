@@ -17,7 +17,7 @@ export class TagService {
 
   constructor(private http: HttpClient) { }
 
-  getTag(id: number): Observable<Tag> {
+  getTag(id: string): Observable<Tag> {
     return this.http.get<Tag>(url + '/tags/' + id);
   }
 }

@@ -19,9 +19,9 @@ export class TagComponent implements OnInit {
   }
 
   getTag(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
+    const id = this.route.snapshot.paramMap.get('id');
     this.tagService.getTag(id)
-    .subscribe(tag => { this.tag = tag[0]; });
+    .subscribe(tag => { this.tag = tag; console.log(this.tag); console.log(tag) });
   }
 
   goBack(): void {
@@ -29,7 +29,7 @@ export class TagComponent implements OnInit {
   }
 
   getUrl(): string{
-    return `url(${this.tag.avatar})`;
+    return `url(${this.tag.Avatar})`;
   }
 
 }

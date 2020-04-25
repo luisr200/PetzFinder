@@ -9,7 +9,7 @@ import { CallbackComponent } from './callback/callback.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'pet/:id', component: PetComponent },
-  { path: 'tags/:id', component: TagComponent },
+  { path: 'tag/:id', component: TagComponent },
   { path: 'callback', component: CallbackComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];

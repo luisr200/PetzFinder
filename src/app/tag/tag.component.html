@@ -2,13 +2,13 @@
   <mat-card class="card">
     <mat-card-header>
       <div mat-card-avatar [ngStyle]="{'background-image': getUrl()}"></div>
-      <mat-card-title>{{tag.name}}</mat-card-title>
-      <mat-card-subtitle>{{tag.petId}}</mat-card-subtitle>
+      <mat-card-title>{{tag.Name}}</mat-card-title>
+      <mat-card-subtitle>{{tag.PetId}}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="{{tag.photo}}" alt="{{tag.petId}}">
     <mat-card-content>
       <p>
-        {{tag.description}} - TAG: {{tag.tagId}}
+        {{tag.Description}} - TAG: {{tag.TagId}}
       </p>
     </mat-card-content>
     <mat-card-actions>
