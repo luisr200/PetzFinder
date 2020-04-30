@@ -6,8 +6,10 @@ export const environment = {
   production: false,
   apiEnpoint: 'https://3aq8h6y40a.execute-api.us-west-2.amazonaws.com/stage',
   cognitoEndpoint: 'https://petzfinder.auth.us-west-2.amazoncognito.com/oauth2/',
-  cognitoClientId: '1e9bjqcg835vr3aui4cvtmtnlu',
-  cognitoredirectUrl: 'https://petzfinder.net',
+  cognitoClientId: '4027a33cqbdv9bf9n16q7jb3bh',
+  //cognitoClientId: '1e9bjqcg835vr3aui4cvtmtnlu',
+  //Must be the same as the origin request
+  cognitoredirectUrl: 'https://localhost:4200/callback',
   cognitoGrantType: 'authorization_code'
 };
 
